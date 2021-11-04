@@ -1,18 +1,29 @@
 /* Primary Color */
 /* Neutral Color */
+/* Font size */
+/* 14px */
+/* 18px */
 /* Break Points */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: inherit;
+  box-sizing: inherit;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Public Sans", sans-serif;
   font-size: 0.875rem;
+  font-weight: 300;
+  color: #9698a6;
+  line-height: 1.3;
+  overflow-x: hidden;
 }
 
 #overlay {
@@ -57,11 +68,13 @@ body {
 /* Request button */
 .request-btn {
   position: relative;
-  display: block;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 400;
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
-  padding: 0.9375rem 2.1875rem;
+  padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   color: white;
   background: #8e0e00;
@@ -100,6 +113,9 @@ body {
 
 /* Primary Color */
 /* Neutral Color */
+/* Font size */
+/* 14px */
+/* 18px */
 /* Break Points */
 #header {
   position: relative;
@@ -199,6 +215,19 @@ body {
   padding: 0.6875rem 0;
   margin: 0 1.5625rem;
   color: #2d314d;
+}
+
+#hero {
+  background-color: #fafafa;
+}
+#hero .hero__content {
+  margin: 3rem 0;
+  padding: 0 1.5625rem;
+  max-width: 29.5em;
+  align-items: baseline;
+}
+#hero .hero__content h1 {
+  font-size: 3.25rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */

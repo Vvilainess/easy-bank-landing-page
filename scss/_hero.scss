@@ -1,0 +1,12 @@
+#hero {
+    background-color: $veryLightGray;
+    .hero__content {
+        margin: 3rem 0;
+        padding: 0 1.5625rem;
+        max-width: 29.5em;
+        align-items: baseline;
+        h1 {
+            font-size: $font-xlg !important;
+        }
+    }
+}
