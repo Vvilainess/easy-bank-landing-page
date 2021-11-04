@@ -1,0 +1,14 @@
+{
+    "name": "iildy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "sass scss/style.scss --watch ./assets/css/style.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.43.4"
+    }
+}

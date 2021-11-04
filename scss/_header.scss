@@ -1,0 +1,113 @@
+#header {
+    position: relative;
+    background-color: $white;
+    .header__nav {
+        position: relative;
+        padding: 1.0625rem 1.5rem;
+        .header__brand {
+            padding-bottom: 0.0625rem;
+            a {
+                img {
+                    width: 8.8125rem;
+                    height: 1.375rem;
+                }
+            }
+        }
+        .header__menu {
+            padding: 0.21875rem 0;
+            a {
+                position: relative;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $grayishBlue;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -32px;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 5px;
+                    background: #8e0e00; /* fallback for old browsers */
+                    background: -webkit-linear-gradient(
+                        to right,
+                        $limeGreen,
+                        $brightCyan
+                    ); /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(
+                        to right,
+                        $limeGreen,
+                        $brightCyan
+                    );
+                    transition: opacity 300ms ease-in-out;
+                    opacity: 0;
+                }
+                &:hover {
+                    color: $darkBlue;
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+            a:not(:last-child) {
+                margin-right: 1.75rem;
+            }
+        }
+        .hamburger-btn {
+            position: relative;
+            cursor: pointer;
+            span {
+                display: block;
+                width: 27px;
+                height: 2px;
+                background-color: $black;
+                transition: 400ms;
+            }
+            span:nth-child(1) {
+                &.change {
+                    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                    transform: rotate(-45deg) translate(-4px, 7px);
+                }
+            }
+            span:nth-child(2) {
+                &.change {
+                    opacity: 0;
+                }
+            }
+            span:last-child {
+                &.change {
+                    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                    transform: rotate(45deg) translate(-3px, -6px);
+                }
+            }
+            span:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .menu-block {
+        position: absolute;
+        display: none;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        border-radius: 5px;
+        background-color: $white;
+        &.open {
+            display: block;
+        }
+        div {
+            padding: 1.5625rem 0;
+            a {
+                display: block;
+                text-decoration: none;
+                text-transform: capitalize;
+                text-align: center;
+                padding: 0.6875rem 0;
+                margin: 0 1.5625rem;
+                color: $darkBlue;
+            }
+        }
+    }
+}
