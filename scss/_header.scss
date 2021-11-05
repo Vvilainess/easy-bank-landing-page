@@ -3,7 +3,7 @@
     background-color: $white;
     .header__nav {
         position: relative;
-        padding: 1.0625rem 1.5rem;
+        padding: 1.0625rem 0;
         .header__brand {
             padding-bottom: 0.0625rem;
             a {
@@ -94,6 +94,7 @@
         width: 90%;
         border-radius: 5px;
         background-color: $white;
+        z-index: 99;
         &.open {
             display: block;
         }

@@ -32,7 +32,6 @@ body {
     background-image: linear-gradient(#2d314d, transparent);
     opacity: 0;
     transition: opacity 300ms ease-in-out;
-    z-index: -1;
     &.open {
         display: block;
         opacity: 1;
@@ -43,6 +42,7 @@ body {
     position: relative;
     max-width: 69.375rem;
     margin: 0 auto;
+    padding: 0 1.5rem;
     &--pall {
         padding: 0 1.5rem;
     }
